@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#EFEFEF]">
+     <!-- Nav  -->
+     <div
+     class="w-full h-[70px] md:h-[100px] fixed top-0 z-10 flex bg-white justify-between items-center"
+   >
+     <!-- Logo  -->
+     <svg
+       class="w-[120px] h-[35px] ml-[5px] md:ml-[25px] md:w-[130px]"
+       xmlns="http://www.w3.org/2000/svg"
+       fill="none"
+       viewBox="0 0 100 37"
+     >
+       <path
+         fill="#010334"
+         d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"
+       ></path>
+       <path
+         fill="#010334"
+         d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"
+       ></path>
+     </svg>
+
+     <!-- Links  -->
+     <div class="hidden md:block w-[580px] ml-[-130px] ">
+       <ul class="flex justify-between items-center">
+         <div class="h-[25px] flex justify-center items-center">
+            <div>
+           <li class="font-semibold ">
+             Products
+            </div>
+            <div class="group relative ml-[8px] flex justify-center items-center h-[50px]">
+                <i
+               class="hidden fa-solid fa-chevron-up  hover:text-[dodgerblue] text-[14px]  group-hover:block  "
+             ></i>
+             <i
+               class=" fa-solid fa-chevron-down hover:text-[dodgerblue] text-[14px] group-hover:hidden"
+             ></i>
+             <!-- listitem_collection  -->
+           <div
+           class="absolute left-[-100px] top-[45px] w-[350px] h-[450px] border border-2 pl-[30px] pr-[15px] py-[40px] bg-white hidden group-hover:block "
+         >
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="./Index_2.html">
+               <h2 class="font-semibold">Website</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur .
+               </p>
+             </a>
+           </li>
+
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="./Index_3.html">
+               <h2 class="font-semibold">Online Store</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur .
+               </p>
+             </a>
+           </li>
+
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="./Index_4.html">
+               <h2 class="font-semibold">Domain</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur adipisicing.
+               </p>
+             </a>
+           </li>
+
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="Index_5.html">
+               <h2 class="font-semibold">Logo</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur adipisicing.
+               </p>
+             </a>
+           </li>
+
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="./Index_6.html">
+               <h2 class="font-semibold">Facebook &amp; Instagram</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptates.
+               </p>
+             </a>
+           </li>
+         </div>
+            </div>
+           </li>
+           
+         </div>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Inspiration</li>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Pricing</li>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Blog</li>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Features</li>
+       </ul>
+     </div>
+
+     <!-- Help and Login  -->
+     <div class="hidden md:block w-[350px] mr-[30px]">
+       <ul class="flex justify-between items-center">
+         <div class="h-[25px] flex justify-center items-center">
+            <div>
+                <li class="font-semibold mt-[4px]">
+                  Help
+                 </div>
+                 <div class="group relative ml-[8px] flex justify-center items-center h-[50px]">
+                     <i
+                    class="hidden fa-solid fa-chevron-up hover:text-[dodgerblue] text-[13px] group-hover:block"
+                  ></i>
+                  <i
+                    class="fa-solid fa-chevron-down hover:text-[dodgerblue] text-[14px] group-hover:hidden"
+                  ></i>
+           <!-- listitem_collection  -->
+           <div
+             class="absolute left-[-260px] top-[45px] w-[350px] h-[250px] border pl-[30px] pr-[15px] py-[40px] bg-white hidden group-hover:block"
+           >
+             <p class="font-semibold mb-[30px]">HOW CAN WE HELP YOU</p>
+
+             <li class="mb-[30px] hover:text-[dodgerblue]">
+               <a href="">
+                 <h2 class="font-semibold">Help Center</h2>
+                 <p class="text-[13px]">
+                   Lorem ipsum dolor sit amet consectetur .
+                 </p>
+               </a>
+             </li>
+
+             <li class="mb-[30px] hover:text-[dodgerblue]">
+               <a href="">
+                 <h2 class="font-semibold">Contact Support</h2>
+                 <p class="text-[13px]">
+                   Lorem ipsum dolor sit amet consectetur adipisicing.
+                 </p>
+               </a>
+             </li>
+           </div>
+         </div>
+        </div>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Log In</li>
+
+         <button class="w-[130px] h-[35px] bg-[#2035FA] text-white font-bold transition duration-[1s] hover:transition duration-[1s] hover:bg-white hover:text-[#2035FA] hover:border-blue-700 hover:border-4">Start free</button>
+       </ul>
+     </div>
+     
+    <div class="md:hidden flex w-[200px] justify-between items-center">
+        <ul>
+            <li class="font-semibold">Log In</li>
+        </ul>
+        <button class="w-[90px] h-[32px] bg-[#2035FA] text-white font-bold transition duration-[1s] hover:transition duration-[1s] hover:bg-white hover:text-[#2035FA] hover:border-blue-700 hover:border-4">Start free</button>
+     <i class="fa-solid fa-bars mr-[15px] text-[30px] "></i>
+    </div>
+   </div>
+    <!-- Main  -->
+    <!-- Section 1  -->
+    <div
+      class="w-full h-[720px]  mt-[70px] px-[15px] flex flex-col justify-between items-center md:flex-row md:mt-[100px] md:h-[670px] bg-white md:px-[0]"
+    >
+      <div
+        class="md:w-[50%] md:h-full  flex items-center md:flex flex-col justify-between items-center "
+      >
+        <h1 class="text-[38px] text-[#010334] font-[900] text-center mt-[20px] md:text-[60px] leading-9 md:leading-[50px] md:px-[30px]">
+         CREATE YOUR ONLINE STORE AND <span class="text-[#2035FA]">SELL 24/7</span>
+        </h1>
+        <img src="https://www.jimdo.com/static/67b08bf0193f13136a4e1def39572c3c/2b8ab/device_visual_shop.webp" alt="" class="hidden md:block mt-[15px]">
+        <p class="text-center mt-[30px] font-semibold md:px-[40px] md:text-[20px] object-cover">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque
+          maiores similique non veniam fugit quod!
+        </p>
+        <button
+          class="w-[200px] h-[60px] bg-[#2035FA] text-white font-bold mt-[30px] md:w-[190px]"
+        >
+          Let's get started
+        </button>
+      </div>
+    
+      <div class="w-full h-[400px] mt-[30px]  flex justify-center items-center md:hidden">
+      <img
+        src="https://www.jimdo.com/static/2fb367fadc0c0db5efdef2eb8a214d80/a072d/mobile-store.webp"
+        alt=""
+        class="w-[85%] h-full object-cover"
+      />
+    </div>
+
+      <div class="hidden md:block md:relative w-[50%] h-full ">
+        <img
+        src="https://www.jimdo.com/static/7b6c02d84b35b5945e8270bc36d3541f/f5cc2/hero_shop.webp"
+        alt=""
+        class="w-full h-full "/>
+        <img
+      src="https://www.jimdo.com/static/a71e425c9aa9b31c1f604b4fc209775c/96a04/TrustBadges-EN-Website.webp"
+      alt=""
+      class="w-[270px] h-[80px] mt-[20px] md:mt-[0] md:absolute bottom-[20px] right-[40px]"
+    />
+      </div>
+
+      
+     
+    </div>
+
+     <!-- Section 2 -->
+     <!-- Title  -->
+     <div class="w-full h-[200px]  flex flex-col px-[15px] md:px-[180px] justify-around items-center mt-[10px]  md:h-[400px] md:justify-center">
+        <h1 class="text-[38px] text-[#010334] font-[900] text-center mt-[20px] md:text-[50px] leading-9 md:leading-[50px] md:px-[200px]">   
+            SEE WHAT'S IN <span class="text-[#2035FA]">STORE</span> 
+          </h1>
+          <p class="font-semibold text-center mt-[10px] md:text-[20px] md:px-[70px] md:mt-[40px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae sint quia accusamus mollitia nam quas ut libero facilis, alias?
+          </p>
+
+       </div>
+
+       <!-- Videos with Info-->
+    <div class="px-[15px] mt-[30px]  md:px-[35px]">
+        <!-- Video with Info 1 -->
+       <div class="w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row-reverse items-center ">
+        <div class="md:w-[50%] md:px-[100px]">
+        <p class="font-[900] text-[21px]">NO COMMISSION FEES:</p>
+        <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam ?</p>
+    </div>
+        <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+        <video muted autoplay loop class="mt-[50px] md:w-[85%] md:mt-[0]">
+            <source src="https://videos.pond5.com/final-countdown-white-background-footage-167282452_main_xxl.mp4" type="video/mp4">
+        </video>
+    </div>
+
+       </div>
+
+
+        <!-- Video with Info 2 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">LOCAL PICKUP:</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted loop autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://media.istockphoto.com/videos/spinning-laptop-with-blank-screen-video-id476294714" type="video/mp4">
+            </video>
+        </div>
+    
+           </div>
+
+           <!-- Video with Info 3 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row-reverse items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">PAYMENT OPTIONS FROM PAYPAL TO SEPA DIRECT DEBIT:</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://videos.pond5.com/final-countdown-white-background-footage-167282452_main_xxl.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+           </div>
+
+           <!-- Video with Info 4 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">T&CS, RETURN POLICY, AND MORE:</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://media.istockphoto.com/videos/spinning-laptop-with-blank-screen-video-id476294714" type="video/mp4">
+            </video>
+        </div>
+    
+           </div>
+
+           <!-- Video with Info 5 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row-reverse items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">INSTAGRAM AND FACEBOOK INTEGRATION:</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://videos.pond5.com/final-countdown-white-background-footage-167282452_main_xxl.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        </div>
+
+
+        <!-- Video with Info 6 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">OPTIMIZED FOR ALL MOBILE DEVICES:</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://media.istockphoto.com/videos/spinning-laptop-with-blank-screen-video-id476294714" type="video/mp4">
+            </video>
+        </div>
+    
+        </div>
+
+    </div>
+
+
+    <div class="w-[full] h-[250px] bg-[#010334] flex flex-col justify-center items-center md:h-[220px]">
+        <p class="text-center px-[60px] text-white text-[20px] font-semibold md:text-[22px]">Effortlessly create your online store</p>
+        <button class="w-[180px] mt-[40px] h-[55px] bg-[#2035FA] text-white font-semibold  md:w-[250px]">
+            Let's get started
+          </button>
+       </div>
+
+
+    <!-- Section 3 -->
+      
+       <div class="w-full h-[220px]  flex flex-col  md:px-[180px] justify-around items-center px-[5px] md:h-[400px] ">
+        <h1 class="mt-[25px] md:mt-[0] text-[26px] font-[900] text-center leading-7 md:leading-[50px] md:text-[55px] md:px-[50px]">   
+            <p><span class="text-[#2035FA]">ONLINE STORE EXAMPLES</span></p>
+            <p>TO EXPLORE</p> 
+          </h1>
+          <p class="text-center mt-[10px] md:text-[20px]">
+            Lorem ipsum dolor sit amet.
+          </p>
+        <button class="w-[180px] mt-[10px] h-[55px] bg-[#2035FA] text-white font-semibold text-center  md:mt-[0] md:pt-[0]">
+            See Examples
+          </button>
+       </div>
+
+    <!-- Carousel  -->
+    <div class="w-full h-[450px]   flex justify-center items-center mt-[30px]">
+        <img src="https://www.jimdo.com/static/5ebddede263a104807f9532b82e4aab5/561e1/mobile_1.webp" alt="" class="w-[190px] h-full mr-[30px] object-cover">
+
+        <img src="https://www.jimdo.com/static/b6700e6f82865df98a6d16de316af0ef/bc373/website_1.webp" alt="" class="w-[400px] h-full hidden md:block md:mr-[30px] object-cover">
+
+        <img src="https://www.jimdo.com/static/779ab53ee7af88cf42962b72fc97bbfe/bc373/website_2.webp" alt="" class="w-[450px] h-full hidden md:block mr-[30px] object-cover">
+
+        <img src="https://www.jimdo.com/static/6e8569f6abc5236ea30f7c5035af8aa9/561e1/mobile_1.webp" alt="" class="w-[190px] h-full hidden md:block mr-[30px] object-cover">
+
+        
+    </div>
+
+     <!-- HOW TO START AN ONLINE STORE  -->
+     <div class="w-full h-[630px]  md:h-[680px] md:flex md:px-[80px] justify-around items-center mt-[40px]  bg-white ">
+        <!-- Title  -->
+    <div class="w-full h-full  flex flex-col px-[15px] justify-around items-center  md:h-full md:w-[60%] md:mr-[20px]">
+        <h1 class="text-[35px] font-[900] text-center leading-9 md:leading-[50px] md:text-[55px] mt-[25px]">   
+            HOW TO START AN
+            <span class="text-[#2035FA]">ONLINE STORE?</span> 
+          </h1>
+          <p class="text-center md:text-left mt-[10px] md:text-[20px] md:px-[25px]">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facere, nobis totam voluptatem, saepe iusto optio cum laudantium.
+          </p>
+          <hr class="border border-[#DFDFDF] w-[100%]">
+          <div>
+          <div class="flex text-[14px] md:text-[16px]">
+          <span class="pl-[5px] text-blue-800 text-[18px] font-semibold">1.</span><p class="pl-[10px] pr-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p>
+        </div>
+
+        <div class="flex mt-[15px] text-[14px] md:text-[16px]">
+            <span class="pl-[5px] text-blue-800 text-[18px] font-semibold">2.</span><p class="pl-[10px] pr-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p>
+          </div>
+
+          <div class="flex mt-[15px] text-[14px] md:text-[16px]">
+            <span class="pl-[5px] text-blue-800 text-[18px] font-semibold">3.</span><p class="pl-[10px] pr-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p>
+          </div>
+
+          <div class="flex mt-[15px] text-[14px] md:text-[16px]">
+            <span class="pl-[5px] text-blue-800 text-[18px] font-semibold">4.</span><p class="pl-[10px] pr-[35px]">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <hr class="border border-[#DFDFDF] w-[100%]">
+
+        <button class="w-[180px] mt-[10px] h-[55px] bg-[#2035FA] text-white font-semibold text-center  md:mt-[0] md:mb-[40px] md:pt-[0]">
+            Start Now
+          </button>
+       </div>
+
+
+       <!-- Image  -->
+       <div class="hidden md:flex justify-center items-center w-[40%] h-full ">
+        <img src="https://www.jimdo.com/static/f8a073844af1c12a83ab50e0237e3437/2ef02/steplist-shop.webp" alt="" class="h-[80%] w-[100%] object-cover">
+    </div>
+    </div>
+
+    <div class="w-full h-[960px] flex flex-col justify-between  bg-white md:bg-[#EFEFEF]  md:justify-center md:h-[900px] ">
+        <!-- Image  -->
+        <div class="md:relative ">
+        <img src="https://www.jimdo.com/static/7566c32a4052f10360ec54052d3e485f/4f8b3/ltg_section.webp" alt="" class="mt-[30px] md:mt-[0] object-cover">
+       </div>
+
+
+        <!-- Text -->
+        <div class="w-full h-[670px] px-[15px] md:px-[70px] flex flex-col  justify-around items-center   bg-white md:h-[95%] md:w-[600px] md:absolute right-[40px]">
+            <h1 class="md:px-[80px] px-[20px] text-[35px] font-[900] text-center leading-9 ">   
+                <span class="text-[#2035FA]">LEGAL PAGES,</span> NOT LEGAL FEES
+              </h1>
+              <p class="font-semibold text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloribus eligendi sapiente qui quos non velit laudantium fugiat minima assumenda iure perferendis nulla architecto nisi dolores, odio doloremque maiores enim!
+              </p>
+              <hr class="border border-[#DFDFDF] w-full">
+            
+             <ul class="list-outside list-disc px-[35px] text-[15px]">
+             <li class="text-blue-700"><span class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</span></li>
+            </ul>
+           
+            <ul class="list-outside list-disc px-[35px] text-[15px]">
+                <li class="text-blue-700"><span class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</span></li>
+               </ul>
+    
+               <ul class="list-outside list-disc px-[35px] text-[15px]">
+                <li class="text-blue-700"><span class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</span></li>
+               </ul>
+              
+               <ul class="list-outside list-disc px-[35px] text-[15px]">
+                <li class="text-blue-700"><span class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</span></li>
+               </ul>
+            
+            <hr class="border border-[#DFDFDF] w-[100%]">
+    
+            <a href="" class="underline decoration-[#061BD9]">
+                <p class="text-[#061BD9] font-semibold">
+                 More about the Legal Text Generator <i class="fa-solid fa-arrow-right"></i>
+                </p>
+              </a>
+           </div>
+
+        
+    </div>
+
+   
+    <!-- Section 4 -->
+    <div class=" bg-white w-full h-[1170px]  flex flex-col justify-between items-center md:flex-row-reverse md:h-[700px]">
+        <div class="mt-[30px]  md:w-[50%] md:h-[620px] md:grid place-items-center">
+            <img src="https://www.jimdo.com/static/3321bbe535cd295cfcf0522a3218d502/ee6e8/features_slider.webp" alt="" class="md:h-full md:w-[500px] object-cover">
+        </div>
+        <div class="w-full h-[580px]  flex flex-col items-center md:w-[50%] 
+        ">
+            <h1 class="md:px-[100px] px-[10px] text-[30px] font-[900] text-center leading-7 ">   
+                ECOMMERCE WEBSITE <span class="text-[#2035FA] text-[26px] md:text-[30px]">FEATURES BUILT FOR YOU</span> 
+              </h1>
+            <img src="http://cdn.onlinewebfonts.com/svg/img_563270.png" alt="" class="w-[50px] h-[80px] mt-[70px] object-cover">
+            <p class="font-[800] text-[20px] mt-[20px]">BUSINESS LISTINGS:</p>
+            <p class="font-[800] text-[20px] mt-[-10px]">INTRODUCE YOURSELF</p>
+            <p class="text-center px-[50px] mt-[30px] md:px-[100px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis voluptatibus necessitatibus deleniti, harum ipsam eos nisi hic iusto illum tempora debitis architecto consequuntur vitae amet temporibus nesciunt molestiae et illo odio? Voluptatem vel maiores nemo?</p>
+        </div>
+    </div>
+
+    <!-- FAQ  -->
+    <div class="w-full h-[550px] px-[15px]  flex flex-col justify-evenly items-center  md:h-[520px]">
+        <p class="font-[900] text-[22px] text-center md:mt-[50px]">FREQUENTLY ASKED QUESTIONS</p>
+        <h1 class="text-[35px] font-[900] text-center leading-9 md:leading-[50px] md:text-[55px] md:px-[150px]">   
+            <span class="text-[#2035FA]">FAQ ONLINE STORE:</span> 
+            YOUR QUESTIONS ANSWERED!
+          </h1>
+    
+         
+          
+          <div class=" md:w-[80%] font-semibold">
+          <div class="flex justify-between items-center text-[14px] md:text-[18px] ">
+          <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+        </div>
+        <hr class="border my-[10px] px-[15px] border-black w-full">
+
+        
+        <div class="flex justify-between items-center text-[14px] md:text-[18px] border">
+            <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+          </div>
+          <hr class="border my-[10px] px-[15px] border-black w-full">
+
+          <div class="flex justify-between items-center text-[14px] md:text-[18px] border">
+            <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+          </div>
+          <hr class="border my-[10px] px-[15px] border-black w-full">
+
+          <div class="flex justify-between items-center text-[14px] md:text-[18px] border">
+            <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+          </div>
+          <hr class="border my-[10px] px-[15px] border-black w-full">
+
+       </div>
+    </div>
+
+    <div class="w-[full] h-[250px] bg-[#010334] flex flex-col justify-center items-center md:h-[200px]">
+        <p class="text-center px-[60px] text-white text-[20px] font-semibold md:text-[22px]">Effortlessly create your online store</p>
+        <button class="w-[180px] mt-[40px] h-[55px] bg-[#2035FA] text-white font-semibold  md:w-[250px]">
+            Let's get started
+          </button>
+       </div>
+
+
+    <!-- Footer  -->
+    <div class="w-full h-[600px] px-[15px] bg-white md:h-[450px] border">
+        <div class="mt-[40px] flex flex-col justify-between md:flex-row-reverse "> 
+        <!-- About us -->
+        <div class=" md:mt-[0] md:h-full  h-[150px] w-full flex flex-col justify-left md:w-[65%] md:flex-row">
+          <ul class="flex justify-between items-left   md:flex-col md:h-[180px] md:mr-[100px]">
+            <div class="h-[35px] flex justify-center items-center">
+               <div class="md:flex-1">
+              <li class="font-semibold md:hover:text-[dodgerblue]">
+                Products
+               </div>
+               <div class="md:hidden group">
+                   <i
+                  class="hidden fa-solid fa-chevron-up  hover:text-[dodgerblue] text-[13px] group-hover:block "
+                ></i>
+                <i
+                  class="fa-solid fa-chevron-down hover:text-[dodgerblue] text-[13px] group-hover:hidden "
+                ></i>
+               </div>
+              </li>
+            </div>
+            <li class="font-semibold hidden md:block md:hover:text-[dodgerblue]">Website</li>
+            <li class="font-semibold hidden md:block md:hover:text-[dodgerblue]">Online Store</li>
+            <li class="font-semibold hidden md:block md:hover:text-[dodgerblue]">Domain</li>
+            <li class="font-semibold hidden md:block md:hover:text-[dodgerblue]">Logo</li>
+          </ul>
+    
+    
+          <ul class="flex justify-between items-left  md:flex-col md:h-[140px] md:mr-[100px]">
+            <div class="h-[35px] flex justify-center items-center">
+               <div class="md:flex-1">
+              <li class="font-semibold md:hover:text-[dodgerblue]">
+                About us
+               </div>
+               <div class="md:hidden group">
+                   <i
+                  class="hidden fa-solid fa-chevron-up  hover:text-[dodgerblue] text-[13px] group-hover:block "
+                ></i>
+                <i
+                  class="fa-solid fa-chevron-down hover:text-[dodgerblue] text-[13px] group-hover:hidden "
+                ></i>
+               </div>
+              </li>
+    
+               
+            </div>
+            <li class="text-left font-semibold hidden md:block hover:text-[dodgerblue]">About Jimbo</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Jobs</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Affiliate</li>
+          </ul>
+    
+    
+          <ul class="flex justify-between items-left md:flex-col md:h-[180px] ">
+            <div class="h-[35px] flex justify-center items-center">
+               <div class="md:flex-1">
+              <li class="font-semibold md:hover:text-[dodgerblue]">
+                Service
+               </div>
+               <div class="md:hidden group">
+                   <i
+                  class="hidden fa-solid fa-chevron-up  hover:text-[dodgerblue] text-[13px] group-hover:block "
+                ></i>
+                <i
+                  class="fa-solid fa-chevron-down hover:text-[dodgerblue] text-[13px] group-hover:hidden "
+                ></i>
+               </div>
+              </li>
+    
+               
+            </div>
+            <li class="text-left font-semibold hidden md:block hover:text-[dodgerblue]">Jimdo Blog</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Inspiration</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Help Center</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Contact Support</li>
+          </ul>
+         
+    
+          
+        </div>
+    
+        <!-- Social Media Links  -->
+        <div class=" w-full h-[130px] grid grid-cols-1 place-items-center md:justify-items-start md:mt-[0] md:w-[35%] md:h-[170px]">
+          <div class="">
+          <svg
+           class="w-[150px] h-[50px]"
+           xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewBox="0 0 100 37"
+         >
+           <path
+             fill="#010334"
+             d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"
+           ></path>
+           <path
+             fill="#010334"
+             d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"
+           ></path>
+         </svg>
+        </div>
+    
+         <div class="w-[60%] h-[50px] flex justify-between items-center md:w-[300px]">
+          <i class="fa-brands fa-facebook text-[25px] hover:text-[dodgerblue]"></i>
+          <i class="fa-brands fa-twitter text-[25px] hover:text-[dodgerblue]"></i>
+          <i class="fa-brands fa-instagram text-[25px] hover:text-[dodgerblue]"></i>
+          <i class="fa-brands fa-youtube text-[25px] hover:text-[dodgerblue]"></i>
+          <i class="fa-brands fa-github text-[25px] hover:text-[dodgerblue]"></i>
+    
+         </div>
+    
+        </div>
+      </div>
+    
+      <!-- Language and Copyright  -->
+    
+      <div class="w-full h-[200px] flex flex-col items-center mt-[40px] font-semibold md:flex-row-reverse justify-between md:h-[60px] md:mt-[100px]">
+        <div class="flex">
+          <img src="https://t3.ftcdn.net/jpg/00/60/12/22/360_F_60122240_yw5pT7wjO8P4m8AyLMCNPoSQhrk7oCCd.jpg" alt="" class="w-[32px] h-[32px] mr-[-1px] ">
+          <img src="https://m.media-amazon.com/images/I/51rzxHubT+L._AC_UX342_.jpg" alt="" class="w-[30px] h-[30px] mr-[15px]">
+          <select>
+            <option value="">English</option>
+            <option value="">Uzbek</option>
+            <option value="">Russian</option>
+          </select>
+        </div>
+    
+        <div class="flex w-[90%] h-[300px] h-[100px] flex-wrap justify-around items-center text-[14px] mt-[50px] md:h-[50px] md:w-[750px] md:mt-[0] md:text-[16px]">
+          <p class="mr-[10px] hover:text-[dodgerblue]">Legal notice</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Terms of Service</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Refund Policy</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Privacy Policy</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Cookie Policy</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Cookie Settings</p>
+    
+        </div>
+      </div>
+    
+    
+    
+       </div>
+
+    </body>
+    </html>

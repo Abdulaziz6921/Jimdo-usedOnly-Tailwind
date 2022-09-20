@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#EFEFEF]">
+     <!-- Nav  -->
+     <div
+     class="w-full h-[70px] md:h-[100px] fixed top-0 z-10 flex bg-white justify-between items-center"
+   >
+     <!-- Logo  -->
+     <svg
+       class="w-[120px] h-[35px] ml-[5px] md:ml-[25px] md:w-[130px]"
+       xmlns="http://www.w3.org/2000/svg"
+       fill="none"
+       viewBox="0 0 100 37"
+     >
+       <path
+         fill="#010334"
+         d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"
+       ></path>
+       <path
+         fill="#010334"
+         d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"
+       ></path>
+     </svg>
+
+     <!-- Links  -->
+     <div class="hidden md:block w-[580px] ml-[-130px] ">
+       <ul class="flex justify-between items-center">
+         <div class="h-[25px] flex justify-center items-center">
+            <div>
+           <li class="font-semibold ">
+             Products
+            </div>
+            <div class="group relative ml-[8px] flex justify-center items-center h-[50px]">
+                <i
+               class="hidden fa-solid fa-chevron-up  hover:text-[dodgerblue] text-[14px]  group-hover:block  "
+             ></i>
+             <i
+               class=" fa-solid fa-chevron-down hover:text-[dodgerblue] text-[14px] group-hover:hidden"
+             ></i>
+             <!-- listitem_collection  -->
+           <div
+           class="absolute left-[-100px] top-[45px] w-[350px] h-[450px] border border-2 pl-[30px] pr-[15px] py-[40px] bg-white hidden group-hover:block "
+         >
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="./Index_2.html">
+               <h2 class="font-semibold">Website</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur .
+               </p>
+             </a>
+           </li>
+
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="./Index_3.html">
+               <h2 class="font-semibold">Online Store</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur .
+               </p>
+             </a>
+           </li>
+
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="./Index_4.html">
+               <h2 class="font-semibold">Domain</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur adipisicing.
+               </p>
+             </a>
+           </li>
+
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="Index_5.html">
+               <h2 class="font-semibold">Logo</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur adipisicing.
+               </p>
+             </a>
+           </li>
+
+           <li class="mb-[30px] hover:text-[dodgerblue]">
+             <a href="./Index_6.html">
+               <h2 class="font-semibold">Facebook &amp; Instagram</h2>
+               <p class="text-[13px]">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptates.
+               </p>
+             </a>
+           </li>
+         </div>
+            </div>
+           </li>
+           
+         </div>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Inspiration</li>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Pricing</li>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Blog</li>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Features</li>
+       </ul>
+     </div>
+
+     <!-- Help and Login  -->
+     <div class="hidden md:block w-[350px] mr-[30px]">
+       <ul class="flex justify-between items-center">
+         <div class="h-[25px] flex justify-center items-center">
+            <div>
+                <li class="font-semibold mt-[4px]">
+                  Help
+                 </div>
+                 <div class="group relative ml-[8px] flex justify-center items-center h-[50px]">
+                     <i
+                    class="hidden fa-solid fa-chevron-up hover:text-[dodgerblue] text-[13px] group-hover:block"
+                  ></i>
+                  <i
+                    class="fa-solid fa-chevron-down hover:text-[dodgerblue] text-[14px] group-hover:hidden"
+                  ></i>
+           <!-- listitem_collection  -->
+           <div
+             class="absolute left-[-260px] top-[45px] w-[350px] h-[250px] border pl-[30px] pr-[15px] py-[40px] bg-white hidden group-hover:block"
+           >
+             <p class="font-semibold mb-[30px]">HOW CAN WE HELP YOU</p>
+
+             <li class="mb-[30px] hover:text-[dodgerblue]">
+               <a href="">
+                 <h2 class="font-semibold">Help Center</h2>
+                 <p class="text-[13px]">
+                   Lorem ipsum dolor sit amet consectetur .
+                 </p>
+               </a>
+             </li>
+
+             <li class="mb-[30px] hover:text-[dodgerblue]">
+               <a href="">
+                 <h2 class="font-semibold">Contact Support</h2>
+                 <p class="text-[13px]">
+                   Lorem ipsum dolor sit amet consectetur adipisicing.
+                 </p>
+               </a>
+             </li>
+           </div>
+         </div>
+        </div>
+
+         <li class="font-semibold hover:text-[dodgerblue]">Log In</li>
+
+         <button class="w-[130px] h-[35px] bg-[#2035FA] text-white font-bold transition duration-[1s] hover:transition duration-[1s] hover:bg-white hover:text-[#2035FA] hover:border-blue-700 hover:border-4">Start free</button>
+       </ul>
+     </div>
+     
+    <div class="md:hidden flex w-[200px] justify-between items-center">
+        <ul>
+            <li class="font-semibold">Log In</li>
+        </ul>
+        <button class="w-[90px] h-[32px] bg-[#2035FA] text-white font-bold transition duration-[1s] hover:transition duration-[1s] hover:bg-white hover:text-[#2035FA] hover:border-blue-700 hover:border-4">Start free</button>
+     <i class="fa-solid fa-bars mr-[15px] text-[30px] "></i>
+    </div>
+   </div>
+    <!-- Main  -->
+    <!-- Section 1  -->
+    <div
+      class="w-full h-[870px]  mt-[70px] px-[15px] flex flex-col justify-between items-center md:flex-row md:mt-[100px] md:h-[670px] bg-white md:px-[0]"
+    >
+      <div
+        class="md:w-[50%] md:h-full  flex items-center md:flex flex-col justify-between items-center md:px-[30px]"
+      >
+        <h1 class="text-[38px] text-[#010334] font-[900] text-center mt-[20px] md:text-[60px] leading-9 md:leading-[50px]">
+          BUILD A WEBSITE YOU <span class="text-[#2035FA]">LOVE</span>
+        </h1>
+        <img src="https://www.jimdo.com/static/6fb7c1ea47bc241a60a85cfbe63834a8/2b8ab/device_visual_website_june21.webp" alt="" class="hidden md:block mt-[15px] object-cover">
+        <p class="text-center mt-[30px] font-semibold md:px-[40px] md:text-[20px]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum cumque
+          maiores similique non veniam fugit quod!
+        </p>
+        <button
+          class="w-[200px] h-[60px] bg-[#2035FA] text-white font-bold mt-[30px] md:w-[190px] md:mt-[0] md:mb-[20px]"
+        >
+          Start Free
+        </button>
+      </div>
+    
+      <div class="w-full h-[400px] mt-[30px]  flex justify-center items-center md:hidden">
+      <img
+        src="https://www.jimdo.com/static/846096600bcbb87d8668c873bbbb4666/a072d/mobile-image_july21.webp"
+        alt=""
+        class="w-[85%] h-full object-cover"
+      />
+    </div>
+
+      <div class="hidden md:relative md:block w-[50%] h-full  flex justify-center items-center ">
+        <img
+        src="https://www.jimdo.com/static/96c8f085c1ca4d7090c09f4477bfdf1e/f5cc2/hero_website_july21.webp"
+        alt=""
+        class="w-full h-full"/>
+      </div>
+
+      <img
+      src="https://www.jimdo.com/static/a71e425c9aa9b31c1f604b4fc209775c/96a04/TrustBadges-EN-Website.webp"
+      alt=""
+      class="w-[270px] h-[80px] mt-[20px] md:absolute bottom-[0] right-[20px]"
+    />
+     
+    </div>
+
+     <!-- Section 2 -->
+     <!-- Title  -->
+     <div class="w-full h-[200px]  flex flex-col px-[15px] md:px-[180px] justify-around items-center mt-[10px]  md:h-[400px] md:justify-center">
+        <h1 class="text-[38px] text-[#010334] font-[900] text-center mt-[20px] md:text-[50px] leading-9 md:leading-[50px] md:px-[200px]">   
+            <span class="text-[#2035FA]">WORRRY -FREE</span> WEBSITES
+          </h1>
+          <p class="font-semibold text-center mt-[10px] md:text-[20px] md:px-[70px] md:mt-[40px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae sint quia accusamus mollitia nam quas ut libero facilis, alias?
+          </p>
+
+       </div>
+
+       <!-- Videos with Info-->
+    <div class="px-[15px] mt-[30px]  md:px-[35px]">
+        <!-- Video with Info 1 -->
+       <div class="w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row-reverse items-center ">
+        <div class="md:w-[50%] md:px-[100px]">
+        <p class="font-[900] text-[21px]">EDIT YOUR DESIGN-ANYTIME</p>
+        <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+    </div>
+        <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+        <video muted autoplay loop class="mt-[50px] md:w-[85%] md:mt-[0]">
+            <source src="https://videos.pond5.com/final-countdown-white-background-footage-167282452_main_xxl.mp4" type="video/mp4">
+        </video>
+    </div>
+
+       </div>
+
+
+        <!-- Video with Info 2 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row-reverse items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">PUT YOUR DOMAIN ON IT</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://images.all-free-download.com/footage_preview/mp4/closeup_of_insect_and_flower_in_wild_nature_6892017.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+           </div>
+
+           <!-- Video with Info 3 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">MADE FOR MOBILE</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://images.all-free-download.com/footage_preview/mp4/closeup_of_insect_and_flower_in_wild_nature_6892017.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+           </div>
+
+           <!-- Video with Info 4 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row-reverse items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">COPYRIGHT-FREE PHOTOS</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://images.all-free-download.com/footage_preview/mp4/closeup_of_insect_and_flower_in_wild_nature_6892017.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+           </div>
+
+           <!-- Video with Info 5 -->
+        <div class="mt-[20px] md:mt-[40px] w-full h-[470px]  px-[15px] flex flex-col justify-around bg-white md:h-[400px] md:flex-row items-center ">
+            <div class="md:w-[50%] md:px-[100px]">
+            <p class="font-[900] text-[21px]">CONNECT FACEBOOK, INSTAGRAM & GOOGLE</p>
+            <p class="md:mt-[30px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae modi porro quod reprehenderit nulla labore quam nemo laudantium optio laborum aut, molestias enim. Aperiam magnam?</p>
+        </div>
+            <div class="md:w-[50%] md:h-[80%]  md:flex justify-center items-center ">
+            <video muted autoplay class="mt-[50px] md:w-[85%] md:mt-[0]">
+                <source src="https://images.all-free-download.com/footage_preview/mp4/closeup_of_insect_and_flower_in_wild_nature_6892017.mp4" type="video/mp4">
+            </video>
+        </div>
+    
+        </div>
+
+           <div class="w-full h-[220px]  flex flex-col px-[15px] md:px-[180px] justify-around items-center mt-[40px]  md:h-[400px]">
+            <h1 class="text-[35px] font-[900] text-center leading-9 md:leading-[50px] md:text-[55px] md:px-[150px]">   
+                <span class="text-[#2035FA]">WEBSITES EXAMPLES</span> WORTH SEEING
+              </h1>
+              <p class="text-center mt-[10px] md:text-[20px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            <button class="w-[180px] mt-[10px] h-[55px] bg-[#2035FA] text-white font-semibold text-center  md:mt-[0] md:pt-[0]">
+                See Examples
+              </button>
+           </div>
+
+
+    </div>
+
+
+    <!-- Carousel  -->
+    <div class="w-full h-[450px]   flex justify-center items-center mt-[30px]">
+        <img src="https://www.jimdo.com/static/5ebddede263a104807f9532b82e4aab5/561e1/mobile_1.webp" alt="" class="w-[190px] h-full mr-[30px] object-cover">
+
+        <img src="https://www.jimdo.com/static/fe444c59a0e9e7dbeb39df042894619c/03899/website_2.webp" alt="" class="w-[520px] h-full hidden md:block md:mr-[30px] object-cover">
+
+        <img src="https://www.jimdo.com/static/fde6542b9dd6e6b844ee9fa1accef54d/561e1/mobile_3.webp" alt="" class="w-[190px] h-full hidden md:block mr-[30px] object-cover">
+
+        <img src="https://www.jimdo.com/static/5233382730d3b90cb58b427915ae4b14/561e1/mobile_2.webp" alt="" class="w-[190px] h-full hidden md:block mr-[30px] object-cover">
+
+        
+    </div>
+
+    <!-- Section-3  -->
+    <div class="w-full h-[550px]  md:h-[650px] flex md:px-[100px] justify-around items-center mt-[40px]  bg-white ">
+        <!-- Title  -->
+    <div class="w-full h-full  flex flex-col px-[15px] justify-around items-center  md:h-full md:w-[50%] md:mr-[80px]">
+        <h1 class="text-[35px] font-[900] text-center leading-9 md:leading-[50px] md:text-[55px] ">   
+            HOW DO I MAKE A
+            <span class="text-[#2035FA]">WEBSITE?</span> 
+          </h1>
+          <p class="text-center mt-[10px] md:text-[20px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam eos assumenda a at id.
+          </p>
+          <hr class="border-black-400">
+          <div>
+          <div class="flex text-[14px] md:text-[16px]">
+          <span class="pl-[5px] text-blue-800 text-[18px] font-semibold">1.</span><p class="pl-[10px] pr-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p>
+        </div>
+
+        <div class="flex mt-[15px] text-[14px] md:text-[16px]">
+            <span class="pl-[5px] text-blue-800 text-[18px] font-semibold">2.</span><p class="pl-[10px] pr-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p>
+          </div>
+
+          <div class="flex mt-[15px] text-[14px] md:text-[16px]">
+            <span class="pl-[5px] text-blue-800 text-[18px] font-semibold">3.</span><p class="pl-[10px] pr-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p>
+          </div>
+
+          <div class="flex mt-[15px] text-[14px] md:text-[16px]">
+            <span class="pl-[5px] text-blue-800 text-[18px] font-semibold">4.</span><p class="pl-[10px] pr-[35px]">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <hr class="border-black-400">
+
+        <button class="w-[180px] mt-[10px] h-[55px] bg-[#2035FA] text-white font-semibold text-center md:mt-[0] md:pt-[0]">
+            Start Now
+          </button>
+       </div>
+
+
+       <!-- Image  -->
+       <div class="hidden md:flex justify-center items-center w-[50%] h-full ">
+        <img src="https://www.jimdo.com/static/eb49a0cf13c6078bef055aa40ccbf329/2ef02/steplist.webp" alt="" class="h-[80%] w-[75%] object-cover">
+    </div>
+    </div>
+     
+  
+    <div class="w-[full] h-[250px] bg-[#010334] flex flex-col justify-center items-center md:h-[180px]">
+        <p class="text-center px-[60px] text-white text-[20px] font-semibold md:text-[22px]">Professionalize your busines with a website today</p>
+        <button class="w-[180px] mt-[40px] h-[55px] bg-[#2035FA] text-white font-semibold  md:w-[250px]">
+            Let's get started
+          </button>
+       </div>
+
+
+    <!-- Section-4  -->
+
+    <div class=" bg-white w-full h-[1000px]  flex flex-col justify-between items-center md:flex-row-reverse md:h-[700px]">
+        <div class="mt-[30px]  md:w-[50%] md:h-[620px] md:grid place-items-center">
+            <img src="https://www.jimdo.com/static/d89c50a857e3d0367d26b4e41d4ce7a5/ee6e8/carpenter.webp" alt="" class="md:h-full md:w-[500px] object-cover">
+        </div>
+        <div class="w-full h-[470px]  flex flex-col items-center md:w-[50%]">
+            <img src="http://cdn.onlinewebfonts.com/svg/img_563270.png" alt="" class="w-[50px] h-[80px] mt-[70px]">
+            <p class="font-[800] text-[20px] mt-[20px]">BUSINESS LISTINGS:</p>
+            <p class="font-[800] text-[20px] mt-[-10px]">INTRODUCE YOURSELF</p>
+            <p class="text-center px-[50px] mt-[30px] md:px-[100px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis voluptatibus necessitatibus deleniti, harum ipsam eos nisi hic iusto illum tempora debitis architecto consequuntur vitae amet temporibus nesciunt molestiae et illo odio? Voluptatem vel maiores nemo?</p>
+        </div>
+    </div>
+
+     <!-- FAQ  -->
+    <div class="w-full h-[580px] px-[15px]  flex flex-col justify-evenly items-center  md:h-[550px]">
+        <p class="font-[900] text-center md:mt-[50px]">WEBSITE FAQ</p>
+        <h1 class="text-[35px] font-[900] text-center leading-9 md:leading-[50px] md:text-[55px] md:px-[150px]">   
+            SIMPLY BEATIFUL. BEAUTIFULLY 
+            <span class="text-[#2035FA]">SIMPLE</span> 
+          </h1>
+    
+         
+          
+          <div class=" md:w-[80%]">
+          <div class="flex justify-between items-center text-[14px] md:text-[18px] ">
+          <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+        </div>
+        <hr class="border my-[10px] px-[15px] border-black w-full">
+
+        
+        <div class="flex justify-between items-center text-[14px] md:text-[18px] border">
+            <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+          </div>
+          <hr class="border my-[10px] px-[15px] border-black w-full">
+
+          <div class="flex justify-between items-center text-[14px] md:text-[18px] border">
+            <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+          </div>
+          <hr class="border my-[10px] px-[15px] border-black w-full">
+
+          <div class="flex justify-between items-center text-[14px] md:text-[18px] border">
+            <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+          </div>
+          <hr class="border my-[10px] px-[15px] border-black w-full">
+
+
+          <div class="flex justify-between items-center text-[14px] md:text-[18px] border">
+            <p class=" pr-[50px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iusto iste? Assumenda!</p> <i class="fa-solid fa-plus"></i>
+          </div>
+          <hr class="border mt-[15px]  px-[15px] border-black w-full">
+
+       </div>
+    </div>
+
+     <!-- Section-5  -->
+     <!-- Title  -->
+     <div class="bg-white w-full h-[200px] px-[15px]  flex flex-col justify-evenly items-center ">
+        <h1 class="text-[35px] font-[900] text-center leading-9 md:leading-[50px] md:text-[55px] md:px-[170px]">   
+             
+            <span class="text-[#2035FA]">WHAT WEBSITES</span> CAN I MAKE WITH JIMDO
+          </h1>
+        <p class="md:text-[20px]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+
+    <!-- Containers  -->
+    <div class="flex flex-col justify-between h-[1220px] w-full  px-[25px] md:flex-row items-center md:px-[0] md:h-[500px] ">
+        <!-- Container 1 -->
+        <div class="flex flex-col items-center h-[400px] w-full md:px-[50px] ">
+            <img src="https://cdn4.iconfinder.com/data/icons/business-office-17/512/10-512.png" alt="" class="w-[80px] h-[80px] mt-[40px]">
+            <p class="font-[900] text-center text-[20px]  mt-[20px]">BUSINESS WEBSITES</p>
+            <p class="text-center mt-[20px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta nostrum ex, accusamus doloremque dolores animi quibusdam corporis error impedit debitis cupiditate laboriosam?</p>
+
+            <a href="" class="underline decoration-[#061BD9]">
+                <p class="mt-[40px] text-[#061BD9] font-semibold">
+                  Business Website how to <i class="fa-solid fa-arrow-right"></i>
+                </p>
+              </a>
+
+        </div>
+
+
+         <!-- Container 2 -->
+
+        <div class="flex flex-col items-center h-[400px] w-full md:px-[50px] ">
+            <img src="https://cdn0.iconfinder.com/data/icons/real-estate-165/512/store-512.png" alt="" class="w-[80px] h-[80px] mt-[40px]">
+            <p class="font-[900] text-center text-[20px]  mt-[20px]">PERSONAL WEBSITES</p>
+            <p class="text-center mt-[20px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta nostrum ex, accusamus doloremque dolores animi quibusdam corporis error impedit debitis cupiditate laboriosam?</p>
+            <a href="" class="underline decoration-[#061BD9]">
+                <p class="mt-[40px] text-[#061BD9] font-semibold">
+                  Personal Website how to <i class="fa-solid fa-arrow-right"></i>
+                </p>
+              </a>
+
+        </div>
+         
+         <!-- Container 3 -->
+        <div class="flex flex-col items-center h-[400px] w-full md:px-[50px]  ">
+            <img src="https://cdn-icons-png.flaticon.com/512/2830/2830827.png" alt="" class="w-[80px] h-[80px] mt-[40px]">
+            <p class="font-[900] text-center text-[20px]  mt-[20px]">PORTFOLIO WEBSITES</p>
+            <p class="text-center mt-[20px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta nostrum ex, accusamus doloremque dolores animi quibusdam corporis error impedit debitis cupiditate laboriosam?</p>
+            <a href="" class="underline decoration-[#061BD9]">
+                <p class="mt-[40px] text-[#061BD9] font-semibold">
+                  Online portfolio how to <i class="fa-solid fa-arrow-right"></i>
+                </p>
+              </a>
+
+        </div>
+    </div>
+
+    <div class="w-[full] h-[250px] bg-[#010334] flex flex-col justify-center items-center md:h-[180px]">
+        <p class="text-center px-[60px] text-white text-[20px] font-semibold md:text-[22px]">Create your website today. You've got this!</p>
+        <button class="w-[180px] mt-[40px] h-[55px] bg-[#2035FA] text-white font-semibold  md:w-[250px]">
+            Let's get started
+          </button>
+       </div>
+
+
+       <!-- Footer  -->
+       <div class="w-full h-[600px] px-[15px] bg-white md:h-[450px] border">
+        <div class="mt-[40px] flex flex-col justify-between md:flex-row-reverse "> 
+        <!-- About us -->
+        <div class=" md:mt-[0] md:h-full  h-[150px] w-full flex flex-col justify-left md:w-[65%] md:flex-row">
+          <ul class="flex justify-between items-left   md:flex-col md:h-[180px] md:mr-[100px]">
+            <div class="h-[35px] flex justify-center items-center">
+               <div class="md:flex-1">
+              <li class="font-semibold md:hover:text-[dodgerblue]">
+                Products
+               </div>
+               <div class="md:hidden group">
+                   <i
+                  class="hidden fa-solid fa-chevron-up  hover:text-[dodgerblue] text-[13px] group-hover:block "
+                ></i>
+                <i
+                  class="fa-solid fa-chevron-down hover:text-[dodgerblue] text-[13px] group-hover:hidden "
+                ></i>
+               </div>
+              </li>
+            </div>
+            <li class="font-semibold hidden md:block md:hover:text-[dodgerblue]">Website</li>
+            <li class="font-semibold hidden md:block md:hover:text-[dodgerblue]">Online Store</li>
+            <li class="font-semibold hidden md:block md:hover:text-[dodgerblue]">Domain</li>
+            <li class="font-semibold hidden md:block md:hover:text-[dodgerblue]">Logo</li>
+          </ul>
+    
+    
+          <ul class="flex justify-between items-left  md:flex-col md:h-[140px] md:mr-[100px]">
+            <div class="h-[35px] flex justify-center items-center">
+               <div class="md:flex-1">
+              <li class="font-semibold md:hover:text-[dodgerblue]">
+                About us
+               </div>
+               <div class="md:hidden group">
+                   <i
+                  class="hidden fa-solid fa-chevron-up  hover:text-[dodgerblue] text-[13px] group-hover:block "
+                ></i>
+                <i
+                  class="fa-solid fa-chevron-down hover:text-[dodgerblue] text-[13px] group-hover:hidden "
+                ></i>
+               </div>
+              </li>
+    
+               
+            </div>
+            <li class="text-left font-semibold hidden md:block hover:text-[dodgerblue]">About Jimbo</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Jobs</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Affiliate</li>
+          </ul>
+    
+    
+          <ul class="flex justify-between items-left md:flex-col md:h-[180px] ">
+            <div class="h-[35px] flex justify-center items-center">
+               <div class="md:flex-1">
+              <li class="font-semibold md:hover:text-[dodgerblue]">
+                Service
+               </div>
+               <div class="md:hidden group">
+                   <i
+                  class="hidden fa-solid fa-chevron-up  hover:text-[dodgerblue] text-[13px] group-hover:block "
+                ></i>
+                <i
+                  class="fa-solid fa-chevron-down hover:text-[dodgerblue] text-[13px] group-hover:hidden "
+                ></i>
+               </div>
+              </li>
+    
+               
+            </div>
+            <li class="text-left font-semibold hidden md:block hover:text-[dodgerblue]">Jimdo Blog</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Inspiration</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Help Center</li>
+            <li class="font-semibold hidden md:block hover:text-[dodgerblue]">Contact Support</li>
+          </ul>
+         
+    
+          
+        </div>
+    
+        <!-- Social Media Links  -->
+        <div class=" w-full h-[130px] grid grid-cols-1 place-items-center md:justify-items-start md:mt-[0] md:w-[35%] md:h-[170px]">
+          <div class="">
+          <svg
+           class="w-[150px] h-[50px]"
+           xmlns="http://www.w3.org/2000/svg"
+           fill="none"
+           viewBox="0 0 100 37"
+         >
+           <path
+             fill="#010334"
+             d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z"
+           ></path>
+           <path
+             fill="#010334"
+             d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"
+           ></path>
+         </svg>
+        </div>
+    
+         <div class="w-[60%] h-[50px] flex justify-between items-center md:w-[300px]">
+          <i class="fa-brands fa-facebook text-[25px] hover:text-[dodgerblue]"></i>
+          <i class="fa-brands fa-twitter text-[25px] hover:text-[dodgerblue]"></i>
+          <i class="fa-brands fa-instagram text-[25px] hover:text-[dodgerblue]"></i>
+          <i class="fa-brands fa-youtube text-[25px] hover:text-[dodgerblue]"></i>
+          <i class="fa-brands fa-github text-[25px] hover:text-[dodgerblue]"></i>
+    
+         </div>
+    
+        </div>
+      </div>
+    
+      <!-- Language and Copyright  -->
+    
+      <div class="w-full h-[200px] flex flex-col items-center mt-[40px] font-semibold md:flex-row-reverse justify-between md:h-[60px] md:mt-[100px]">
+        <div class="flex">
+          <img src="https://t3.ftcdn.net/jpg/00/60/12/22/360_F_60122240_yw5pT7wjO8P4m8AyLMCNPoSQhrk7oCCd.jpg" alt="" class="w-[32px] h-[32px] mr-[-1px] ">
+          <img src="https://m.media-amazon.com/images/I/51rzxHubT+L._AC_UX342_.jpg" alt="" class="w-[30px] h-[30px] mr-[15px]">
+          <select>
+            <option value="">English</option>
+            <option value="">Uzbek</option>
+            <option value="">Russian</option>
+          </select>
+        </div>
+    
+        <div class="flex w-[90%] h-[300px] h-[100px] flex-wrap justify-around items-center text-[14px] mt-[50px] md:h-[50px] md:w-[750px] md:mt-[0] md:text-[16px]">
+          <p class="mr-[10px] hover:text-[dodgerblue]">Legal notice</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Terms of Service</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Refund Policy</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Privacy Policy</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Cookie Policy</p>
+          <p class="mr-[10px] hover:text-[dodgerblue]">Cookie Settings</p>
+    
+        </div>
+      </div>
+    
+    
+    
+       </div>
+
+
+
+</body>
+</html>
+
+
+       
