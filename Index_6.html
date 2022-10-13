@@ -16,13 +16,15 @@
   <!-- Nav  -->
   <div class="w-full h-[70px] md:h-[100px] fixed top-0 z-10 flex bg-white justify-between items-center ">
     <!-- Logo  -->
-    <svg class="w-[120px] h-[35px] ml-[5px] md:ml-[25px] md:w-[130px]" xmlns="http://www.w3.org/2000/svg" fill="none"
-      viewBox="0 0 100 37">
-      <path fill="#010334"
-        d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z">
-      </path>
-      <path fill="#010334" d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"></path>
-    </svg>
+    <a href="./Index.html">
+      <svg class="w-[120px] h-[35px] ml-[5px] md:ml-[25px] md:w-[130px]" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 100 37">
+        <path fill="#010334"
+          d="M82.37 9.905a8.58 8.58 0 00-8.579 8.58 8.58 8.58 0 008.58 8.58 8.58 8.58 0 008.58-8.58 8.58 8.58 0 00-8.58-8.58zm0 13.393a4.813 4.813 0 110-9.625 4.813 4.813 0 010 9.625zM35.137 10.23h3.608l5.469 10.267 5.444-10.267h3.633v16.513h-4.057V17.92l-4.618 8.823h-.803l-4.618-8.8v8.8h-4.057V10.23h-.001zm-12.252.057h-4.072v9.86a2.847 2.847 0 01-5.693 0H9.048a6.919 6.919 0 1013.837 0v-9.86zm40.54-.057h-6.1v16.513h6.1a8.256 8.256 0 100-16.513zm-.495 13.068h-1.546v-9.625h1.546a4.812 4.812 0 110 9.625zM31.04 10.287h-4.086v16.4h4.086v-16.4z">
+        </path>
+        <path fill="#010334" d="M97.537 2.463V34.51H2.463V2.463h95.074zM100 0H0v36.973h100V0z"></path>
+      </svg>
+    </a>
 
     <!-- Links  -->
     <div class="hidden md:block w-[580px] ml-[-130px] ">
@@ -150,12 +152,12 @@
       <i onclick="Open()" class=" mr-[15px] fa-solid fa-bars text-[30px]">
 
       </i>
-      <div id="right_slider" class="z-20 absolute top-0 translate-x-[700px]">
+      <div id="right_slider" class="flex justify-between z-20 absolute top-0 translate-x-[700px]">
         <div class="flex justify-end items-center w-full h-[70px]">
           <i onclick="Close()" class="mr-[15px] fa-solid fa-xmark text-[30px]"></i>
         </div>
 
-        <ul class="mt-[30px] ml-[13%] w-[60%]  h-[70vh] flex flex-col justify-between items-start">
+        <ul class=" ml-[13%] w-[60%]  h-[70%] border-2 border-red-500 flex flex-col justify-between items-start">
 
 
           <li class="hover:text-[dodgerblue] text-[30px]">
@@ -199,7 +201,7 @@
           <li class="font-semibold hover:text-[dodgerblue] text-[30px]">Features</li>
         </ul>
 
-        <div class="flex justify-between items-center mt-[50px] mx-auto w-[90%] h-[50px]"><button
+        <div class="flex justify-between items-center mb-[5%] mx-auto w-[90%] h-[50px]"><button
             class="w-[48%] h-full text-white bg-[#010334] font-semibold">Sign
             Up</button>
           <button class="w-[48%] h-full border-2 border-black bg-white  font-semibold">Log In</button>
