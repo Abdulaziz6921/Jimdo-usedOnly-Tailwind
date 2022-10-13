@@ -14,7 +14,7 @@
 
 <body class="bg-[#EFEFEF]">
   <!-- Nav  -->
-  <div class="w-full h-[70px] md:h-[100px] fixed top-0 z-10 flex bg-white justify-between items-center">
+  <div class="w-full h-[70px] md:h-[100px] fixed top-0 z-10 flex bg-white justify-between items-center ">
     <!-- Logo  -->
     <svg class="w-[120px] h-[35px] ml-[5px] md:ml-[25px] md:w-[130px]" xmlns="http://www.w3.org/2000/svg" fill="none"
       viewBox="0 0 100 37">
@@ -140,19 +140,72 @@
         <li class="font-semibold hover:text-[dodgerblue]">Log In</li>
 
         <button
-          class="w-[130px] h-[35px] bg-[#2035FA] text-white font-bold transition duration-[1s] hover:transition duration-[1s] hover:bg-white hover:text-[#2035FA] hover:border-blue-700 hover:border-4">Start
+          class=" w-[130px] h-[35px] bg-[#2035FA] text-white font-bold transition duration-[1s] hover:transition duration-[1s] hover:bg-white hover:text-[#2035FA] hover:border-blue-700 hover:border-4">Start
           free</button>
       </ul>
     </div>
 
-    <div class="md:hidden flex w-[200px] justify-between items-center">
-      <ul>
-        <li class="font-semibold">Log In</li>
-      </ul>
-      <button
-        class="w-[90px] h-[32px] bg-[#2035FA] text-white font-bold transition duration-[1s] hover:transition duration-[1s] hover:bg-white hover:text-[#2035FA] hover:border-blue-700 hover:border-4">Start
-        free</button>
-      <i class="fa-solid fa-bars mr-[15px] text-[30px] "></i>
+    <div class="md:hidden flex w-fit justify-center items-center">
+
+      <i onclick="Open()" class=" mr-[15px] fa-solid fa-bars text-[30px]">
+
+      </i>
+      <div id="right_slider" class="z-20 absolute top-0 translate-x-[700px]">
+        <div class="flex justify-end items-center w-full h-[70px]">
+          <i onclick="Close()" class="mr-[15px] fa-solid fa-xmark text-[30px]"></i>
+        </div>
+
+        <ul class="mt-[30px] ml-[13%] w-[60%]  h-[70vh] flex flex-col justify-between items-start">
+
+
+          <li class="hover:text-[dodgerblue] text-[30px]">
+            <a href="./Index_2.html">
+              <h2 class="font-semibold">Website</h2>
+            </a>
+          </li>
+
+          <li class=" hover:text-[dodgerblue] text-[30px]">
+            <a href="./Index_3.html">
+              <h2 class="font-semibold">Online Store</h2>
+            </a>
+          </li>
+
+          <li class="hover:text-[dodgerblue] text-[30px]">
+            <a href="./Index_4.html">
+              <h2 class="font-semibold">Domain</h2>
+            </a>
+          </li>
+
+          <li class="hover:text-[dodgerblue] text-[30px]">
+            <a href="Index_5.html">
+              <h2 class="font-semibold">Logo</h2>
+
+            </a>
+          </li>
+
+          <li class="hover:text-[dodgerblue] text-[30px] leading-[30px]">
+            <a href="./Index_6.html">
+              <h2 class="font-semibold">Facebook &amp; Instagram</h2>
+            </a>
+          </li>
+
+
+          <li class="font-semibold hover:text-[dodgerblue] text-[30px]">Inspiration</li>
+
+          <li class="font-semibold hover:text-[dodgerblue] text-[30px]">Pricing</li>
+
+          <li class="font-semibold hover:text-[dodgerblue] text-[30px]">Blog</li>
+
+          <li class="font-semibold hover:text-[dodgerblue] text-[30px]">Features</li>
+        </ul>
+
+        <div class="flex justify-between items-center mt-[50px] mx-auto w-[90%] h-[50px]"><button
+            class="w-[48%] h-full text-white bg-[#010334] font-semibold">Sign
+            Up</button>
+          <button class="w-[48%] h-full border-2 border-black bg-white  font-semibold">Log In</button>
+        </div>
+
+      </div>
     </div>
   </div>
   <!-- Main  -->
@@ -657,5 +710,6 @@
   </div>
 
 </body>
+<script src="./app.js"></script>
 
 </html>
